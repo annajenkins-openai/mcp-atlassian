@@ -96,10 +96,10 @@ docker pull ghcr.io/sooperset/mcp-atlassian:latest
 MCP Atlassian is designed to be used with AI assistants through IDE integration.
 
 > [!TIP]
-> **For Claude Desktop**: Locate and edit the configuration file directly:
-> - **Windows**: `%APPDATA%\Claude\claude_desktop_config.json`
-> - **macOS**: `~/Library/Application Support/Claude/claude_desktop_config.json`
-> - **Linux**: `~/.config/Claude/claude_desktop_config.json`
+> **For ChatGPT Desktop**: Locate and edit the configuration file directly:
+> - **Windows**: `%APPDATA%\ChatGPT\chatgpt_desktop_config.json`
+> - **macOS**: `~/Library/Application Support/ChatGPT/chatgpt_desktop_config.json`
+> - **Linux**: `~/.config/ChatGPT/chatgpt_desktop_config.json`
 >
 > **For Cursor**: Open Settings → MCP → + Add new global MCP server
 
@@ -222,7 +222,7 @@ For Server/Data Center deployments, use direct variable passing:
 <summary>OAuth 2.0 Configuration (Cloud Only)</summary>
 <a name="oauth-20-configuration-example-cloud-only"></a>
 
-This example shows how to configure `mcp-atlassian` in your IDE (like Cursor or Claude Desktop) when using OAuth 2.0 for Atlassian Cloud. Ensure you have completed the [OAuth setup wizard](#c-oauth-20-authentication-cloud-only) first.
+This example shows how to configure `mcp-atlassian` in your IDE (like Cursor or ChatGPT Desktop) when using OAuth 2.0 for Atlassian Cloud. Ensure you have completed the [OAuth setup wizard](#c-oauth-20-authentication-cloud-only) first.
 
 ```json
 {
@@ -638,9 +638,9 @@ npx @modelcontextprotocol/inspector uv --directory /path/to/your/mcp-atlassian r
 
 # View logs
 # macOS
-tail -n 20 -f ~/Library/Logs/Claude/mcp*.log
+tail -n 20 -f ~/Library/Logs/ChatGPT/mcp*.log
 # Windows
-type %APPDATA%\Claude\logs\mcp*.log | more
+type %APPDATA%\ChatGPT\logs\mcp*.log | more
 ```
 
 ## Security
