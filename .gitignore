@@ -72,5 +72,5 @@ playground/
 # cursor
 .cursor*
 
-# Claude
-.claude/
+# ChatGPT
+.chatgpt/
